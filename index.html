@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD y Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <h1>Inventario de Películas y Autos</h1>
+
+    <input type="text" id="search" placeholder="Buscar película">
+
+
+    <section id="form-section">
+        <h2>Agregar Nuevo Registro</h2>
+        <form id="crud-form">
+            <input type="text" id="carMovieName" placeholder="Nombre de la Película" required>
+            <input type="number" id="carMovieYear" placeholder="Año" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </section>
+
+    <section id="data-section">
+        <h2>Lista de Registros</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Año</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="data-table"></tbody>
+        </table>
+    </section>
+
+    <section id="dashboard-section">
+        <h2>Dashboard</h2>
+        <canvas id="dashboard-chart"></canvas>
+    </section>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/script.js"></script>
+
+
+</html>

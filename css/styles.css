@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#dashboard-chart {
+    max-width: 600px;
+    max-height: 400px;
+    display: block;
+    margin: auto;
+}
