@@ -2,25 +2,47 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
+    background-color: #181a1b;
+    color: #f1f1f1;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: #23272b;
+    color: #f1f1f1;
 }
 
 th, td {
-    border: 1px solid black;
+    border: 1px solid #444;
     padding: 8px;
 }
 
+th {
+    background-color: #222;
+}
+
+input, select, textarea {
+    background-color: #23272b;
+    color: #f1f1f1;
+    border: 1px solid #444;
+    padding: 6px;
+    margin: 4px 0;
+}
+
 button {
-    background-color: blue;
+    background-color: #2563eb;
     color: white;
-    padding: 5px;
+    padding: 5px 12px;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #1e40af;
 }
 
 #dashboard-chart {
@@ -28,4 +50,16 @@ button {
     max-height: 400px;
     display: block;
     margin: auto;
+    background-color: #23272b;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0005;
+}
+
+section {
+    background-color: #23272b;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 8px #0005;
 }
